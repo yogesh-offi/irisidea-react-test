@@ -1,0 +1,182 @@
+/* Main container for sidebar and content */
+.main-container {
+    display: flex;
+    height: 98vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 200px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(181, 172, 172, 0.811);
+  }
+  
+  .sidebar-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .sidebar-menu {
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .sidebar-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .sidebar-item:hover, .sidebar-item.active {
+    background-color: #28a745;
+  }
+
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    overflow-y: auto;
+  }
+  
+  /* Rest of the styles for the user table */
+  .users-container {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .users-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .filter-container, .search-container {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+  
+  .filter-label, .search-label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .filter-select, .search-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-input {
+    width: 200px;
+  }
+  
+  .add-user-button {
+    float: right;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .add-user-button:hover {
+    background-color: #218838;
+  }
+  
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .users-table thead {
+    background-color: #5A2D30;
+    color: white;
+  }
+  
+  .users-table th, .users-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .actions {
+    position: relative;
+  }
+  
+  .dropbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+  }
+  
+  .dropdown-content button {
+    background-color: #ffffff;
+    color: black;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .dropdown-content button:hover {
+    background-color:#28a745;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .pagination {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #5A2D30;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .pagination button:hover {
+    background-color: #472125;
+  }
+  
